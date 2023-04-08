@@ -1,0 +1,31 @@
+<p>navigation works!</p>
+<h1>Send param with url path</h1>
+<button type="button" [routerLink]="['/pages/param-by-path', 'LaserOnline']">
+  HTML
+</button>
+
+<button type="button" (click)="SendParamByPath()">Type Script</button>
+<!-- *****              ***** -->
+<h1>Send Param</h1>
+<button
+  type="button"
+  [routerLink]="['/pages/param', { id: 1, name: 'HelloWorld' }]"
+>
+  Example Param
+</button>
+<button (click)="SendParam()">Example Param</button>
+<hr />
+<h1>Query String</h1>
+<button
+  type=""
+  [routerLink]="['/pages/query-string']"
+  [queryParams]="{ id: 3, name: 'Query String' }"
+>
+  Routes Query String
+</button>
+<button type="button" (click)="sendQueryString()">
+  Query String TypeScript
+</button>
+<br />
+<h1>Param State</h1>
+<button tpye="button" (click)="sendState()">Routes State</button>
